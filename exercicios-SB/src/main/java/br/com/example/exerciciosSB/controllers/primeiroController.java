@@ -6,10 +6,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class primeiroController {
 
-	// @RequestMapping(method = RequestMethod.GET, path = "/ola")
 	@GetMapping(path = { "/ola", "/saudacao" })
 	public String Ola() {
-		return "Ola Spring Boot";
+		return "Ola Spring Boots";
 	}
 
 }
