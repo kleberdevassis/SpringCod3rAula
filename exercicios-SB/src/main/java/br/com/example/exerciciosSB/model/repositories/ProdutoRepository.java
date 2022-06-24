@@ -1,8 +1,8 @@
-package model.entities.repositories;
+package br.com.example.exerciciosSB.model.repositories;
 
 import org.springframework.data.repository.CrudRepository;
 
-import model.entities.Produto;
+import br.com.example.exerciciosSB.model.entities.Produto;
 
 public interface ProdutoRepository 
 extends CrudRepository<Produto, Integer>{

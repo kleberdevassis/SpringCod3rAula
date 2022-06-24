@@ -1,4 +1,4 @@
-package model.entities;
+package br.com.example.exerciciosSB.model.entities;
 
 public class cliente {
 	

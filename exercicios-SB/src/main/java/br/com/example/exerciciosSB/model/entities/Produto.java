@@ -1,4 +1,4 @@
-package model.entities;
+package br.com.example.exerciciosSB.model.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,16 +13,24 @@ public class Produto {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-
+	
+	
+    @Not
 	private String nome;
+
+	private double preco;
+
+	private double desconto;
 
 	public Produto() {
 
 	}
 
-	public Produto(String nome) {
+	public Produto(String nome, double preco, double desconto) {
 		super();
 		this.nome = nome;
+		this.preco = preco;
+		this.desconto = desconto;
 	}
 
 	public int getId() {
@@ -40,5 +48,23 @@ public class Produto {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+
+	public double getPreco() {
+		return preco;
+	}
+
+	public void setPreco(double preco) {
+		this.preco = preco;
+	}
+
+	public double getDesconto() {
+		return desconto;
+	}
+
+	public void setDesconto(double desconto) {
+		this.desconto = desconto;
+	}
+	
+	
 
 }

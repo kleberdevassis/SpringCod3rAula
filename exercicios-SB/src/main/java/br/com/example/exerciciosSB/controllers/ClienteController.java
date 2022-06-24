@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import model.entities.cliente;
+import br.com.example.exerciciosSB.model.entities.cliente;
 
 @RestController
 @RequestMapping("/clientes")
